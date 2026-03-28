@@ -1,45 +1,42 @@
-**☕ Starbucks Menu Analysis: Nutrition & Data Storytelling**
+Everyone thinks bakery items are unhealthy.
+I ran the data on 77 Starbucks products.
+The real calorie driver surprised me — it's not carbs.
 
-  Bu proje, Starbucks menüsündeki 77 farklı yiyecek ürününün besin değerlerini (kalori, yağ, karbonhidrat, protein, lif) inceleyerek; ürün kategorilerini tahmin eden bir Makine Öğrenmesi modeli ve stratejik Veri Görselleştirme çalışmalarını kapsamaktadır.
+I built a small warm-up project before starting an AI-powered Data Science bootcamp: a full nutritional analysis of the Starbucks menu using Python, Pandas, and Scikit-learn.
 
-**📌 Proje Özeti**
+Here's what the data actually says:
 
-  Analiz, menüdeki ürünlerin "Besin DNA'sını" (Nutritional Fingerprint) ortaya çıkarmayı hedefler. Veri seti üzerinde yapılan incelemeler, markanın ürün kategorizasyonunun tesadüfi olmadığını, belirli besin profili standartlarına dayandığını kanıtlamaktadır.
+🥐 Menu Dominance
+53% of Starbucks products are bakery items.
+But real satiety? → It lives in Bistro Boxes and hot breakfast categories.
 
-**🚀 Öne Çıkan Bulgular**
+🔥 The Real Calorie Driver
+Everyone blames carbs.
+The data disagrees: fat content is the dominant predictor (r = 0.76 correlation).
 
-  *Kategori Dağılımı:* Portföyün %53'ü (41 ürün) unlu mamullerden (Bakery) oluşmaktadır.
+🤖 Machine Learning Speaks
+I trained a Decision Tree classifier on nutritional values alone.
+It predicts product category with 69% accuracy.
+Translation: Starbucks has built an unconscious nutritional standard across its entire menu.
 
-  *Korelasyon Analizi:* Kalori artışının birincil sorumlusu karbonhidrat değil, 0.76 korelasyon katsayısı ile yağ oranıdır.
+🌱 Hidden Opportunity
+Fiber and calories are nearly uncorrelated (r = 0.26).
+This means: healthier products don't have to mean higher calories.
+There's space for Starbucks to grow in this direction.
 
-  *Tahminleme Başarısı:* Karar Ağacı (Decision Tree) algoritması kullanılarak geliştirilen model, ürünlerin besin değerlerine bakarak kategorilerini %69 doğrulukla tahmin edebilmektedir.
+🚀 From Data to Strategy
+The data is clear — Starbucks is evolving from a "coffee side" into a meal destination.
+Categories like Bistro Box should be expanded.
 
-  *Stratejik Fırsat:* Lif oranı ile kalori arasında çok düşük bir ilişki (0.26) saptanmıştır; bu durum, kalori yükünü artırmadan sağlıklı/lifli ürün geliştirme potansiyeline işaret eder.
+—
+This wasn't just an analysis.
+It was a proof of concept: data doesn't just explain the past — it designs the future.
 
-**🛠️ Kullanılan Teknolojiler**
+Full project + code on GitHub 👇
+https://lnkd.in/d_GGKqpD
 
-  *Dil:* Python
+Which side are you on?
+🥗 The healthy alternative
+🥪 Or the data's "calorie champion" sandwiches?
 
-  *Veri Manipülasyonu:* Pandas, NumPy
-
-  *Görselleştirme:* Matplotlib, Seaborn
-
-  *Makine Öğrenmesi:* Scikit-learn (Decision Tree Classifier)
-
-**📊 Model Algoritması**
-
-  Algoritma, ürünleri sınıflandırırken şu temel mantığı izler:
-
-  1. **Protein < 12.5g** kontrolü yapar.
-
-  2. Ardından **Kalori < 200** eşiğini değerlendirir.
-
-  3. Bu metrikler sonucunda ürünü "Bakery" veya diğer kategorilere atar.
-
-**💡 İş Stratejisi Önerileri**
-
-  *Pazarlama:* Düşük kalori/Yüksek lif profiline sahip Parfe ve Salatalar sağlık bilinci yüksek kitleye odaklanmalıdır.
-
-  *Ar-Ge:* Unlu mamullerdeki yağ oranı revize edilerek menü geneli ortalama kalori yükü (338.8 kcal) düşürülebilir.
-
-  *Büyüme:* Bistro Box ve Sıcak Kahvaltı çeşitlendirilerek "öğün destinasyonu" konumu güçlendirilmelidir.
+#DataScience #MachineLearning #Python #DataAnalytics #Starbucks #EDA #ScikitLearn #PortfolioProject
